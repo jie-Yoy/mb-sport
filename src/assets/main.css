@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.fadeIn-enter-from,
+.fadeIn-leave-to {
+  opacity: 0;
+}
+
+.fadeIn-enter-active,
+.fadeIn-leave-active {
+  transition: all 0.3s;
+}
+
+.fadeIn-enter-to,
+.fadeIn-leave-from {
+  opacity: 1;
+}
+
+.sliderUp-enter-from,
+.sliderUp-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.sliderUp-enter-active,
+.sliderUp-leave-active {
+  transition: all 0.3s;
+}
+
+.sliderUp-enter-to,
+.sliderUp-leave-from {
+  transform: translateY(0);
+  opacity: 1;
+}
